@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="testStyle.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>나와 닮은 짱구 캐릭터 테스트</title>
+    
 </head>
 <body>
     <!-- 시작 태그 -->
     <div class="content" id="start">
         <p>나와 닮은 짱구 캐릭터 테스트</p>
         <img src="image/짱구배너.png" alt="짱구단체" width="200" height="200" class="img1">
-        <button type="button" class="btn btn-outline-info" onclick="start();">떡잎마을로 출발~</button>
+        <p id="maker">제작자: 이나경</p>
+        <p id="require">※단순히 재미로 제작한 것이며, 오수나 훈이가 나와도 화내지 말아주세요!</p>
+        <button type="button" class="btn btn-warning" onclick="start();">떡잎마을로 출발~</button>
     </div>
 
     <!-- 질문 태그 -->
@@ -23,22 +26,23 @@
         <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning mt-100" role="progressbar" style="width: calc(100/12*1%)"></div>
         </div>
-        <p id="title">문제</p>
+        <p id="title" img src="">문제</p>
         <input type="hidden" id="type" value="EI">
-        <button id="A" type="button" class="btn btn-outline-info">mbti</button>
-        <button id="B" type="button" class="btn btn-outline-info mt-3">mbti</button>
+        <button id="A" type="button" class="btn btn-warning">mbti</button>
+        <button id="B" type="button" class="btn btn-warning mt-3">mbti</button>
     </div>
 
     <!-- 결과 태그 -->
     <div class="content" id="result">
         <img id="img" class="rounded-circle" src="" alt="캐릭터" width="300" height="300">
+        <p id="qu">나와 닮은 짱구 캐릭터는?</p>
         <p id="mbti"><img src="">나와 닮은 짱구 캐릭터</p>
-        <p id="explain" class="card card-body border-info">설명</p>
+        <p id="explain" class="card card-body border-warning">설명</p>
         <div class="result-btn">
-            <button id="replay" type="button" class="btn btn-outline-info" onclick="window.location.reload()">다시하기</button>
-            <button id="copy" type="button" class="btn btn-outline-info mt-4" role="alert" onclick="copy()">링크복사</button>
+            <button id="replay" type="button" class="btn btn-warning" onclick="window.location.reload()">다시하기</button>
+            <button id="copy" type="button" class="btn btn-warning mt-4" role="alert" onclick="copy()">링크복사</button>
             <a id="kakaotalk-sharing-btn" href="javascript:shareMessage()">
-                <button type="button" class="btn btn-outline-info mt-4" style="width:100%;">
+                <button type="button" class="btn btn-warning mt-4" style="width:100%;">
                     공유하기
                 </button>
               </a>
@@ -67,10 +71,10 @@
       Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-          title: '나만의 유형테스트 하러갈래?',
-          description: '나랑 잘 어울리는 동물은?',
+          title: '나와 닮은 짱구 캐릭터 보러갈래?',
+          description: '나와 닮은 짱구 캐릭터는?',
           imageUrl:
-            'https://ibb.co/fHNWZ4d',
+            'https://ibb.co/R9rfW0y',
           link: {
             webUrl: 'https://flourishing-eclair-798caf.netlify.app/',
           },
