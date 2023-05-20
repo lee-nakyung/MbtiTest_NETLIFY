@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
     font-family: "Gamja flower",cursive;
-    color:rgb(255, 174, 0)
+    
 }
 
 body{
@@ -15,7 +15,7 @@ body{
 }
 
 #start>button{
-    margin-top: 10vh;
+    margin-top: 1vh;
 }
 
 .content{
@@ -29,16 +29,44 @@ body{
     /*상우하좌*/
 }
 
+#result>#qu{
+    color:rgb(255, 140, 0);
+    font-size:1.5rem;
+}
+
+#start>img{
+    width:300px;
+    height:200px;
+    display: block;
+    margin:5vw auto 0 auto;
+}
+
+#title>img{
+    width:300px;
+    height:200px;
+    display: block;
+    margin:3vw auto 0 auto;
+}
+
 .img1{
     position:relative;
-    margin-left:300px;
-    width:300px;
-    height:300px;
+    margin-left:350px;
 }
 
 #start>p{
     font-size:2.5rem;
-    margin-top:10vh;
+    margin-top:5vh;
+    color:orange;
+}
+
+#start>#maker{
+    font-size:1rem;
+    color:black;
+}
+
+#start>#require{
+    font-size:1.5rem;
+    color:rgb(255, 0, 0);
 }
 
 
@@ -58,12 +86,19 @@ body{
 
 #question > button{
     height:8vh;
+    margin-top:20vh;
 }
 
 #result > #img{
-    margin-left:300px;
+    width:300px;
+    height:300px;
+    display: block;
+    margin:5vw auto 0 auto;
 }
 
+#result>#mbti{
+    font-size:1.5em;
+}
 #result > .result-btn{
     display:flex;
     flex-direction:column;
